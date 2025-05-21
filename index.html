@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birth Year Calculator</title>
+</head>
+<body>
+    <h1>Birth Year Calculator</h1>
+    <p>Click the button below to start:</p>
+    <button onclick="calculateBirthYear()">Start</button>
+
+    <script>
+        function calculateBirthYear() {
+            // Prompt user for their name
+            const userName = prompt("Please enter your name:");
+
+            // Prompt user for their age
+            const userAge = prompt("Please enter your age:");
+
+            // Get current year
+            const currentYear = new Date().getFullYear();
+
+            // Calculate year of birth
+            const yearOfBirth = currentYear - parseInt(userAge);
+
+            // Display the result
+            alert(`Hello ${userName}! You were born in ${yearOfBirth}.`);
+        }
+    </script>
+</body>
+</html> 
